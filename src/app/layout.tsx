@@ -1,9 +1,9 @@
 import { Header } from '@/components/Header'
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Assistant } from 'next/font/google'
 
-const inter = Inter({
+const assistant = Assistant({
   subsets: ['latin'],
   display: 'swap',
 })
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR" className={inter.className} >
+    <html lang="pt-BR" className={assistant.className} >
       <body>
         <Header />
         {children}

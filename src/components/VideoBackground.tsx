@@ -11,7 +11,7 @@ export function VideoBackground() {
       <div className="flex items-start 
            w-screen h-screen overflow-hidden opacity-70 contrast-[0.85] sepia-[0.07]">
 
-        <video playsInline autoPlay loop muted={muted} className="absolute top-0 w-screen h-screen object-cover" src="https://github.com/Nbioni/auretto/raw/main/public/maringa-video.mp4" />
+        <video id="background-video" playsInline autoPlay loop muted={muted} className="pointer-events-none absolute top-0 w-screen h-screen object-cover" src="https://github.com/Nbioni/auretto/raw/main/public/maringa-video.mp4" />
 
         <button onClick={handleToggleMute} className="absolute z-10 bottom-[7vw] lg:bottom-[1.9791666667vw] right-[1.77vw] bg-transparent text-blue-dark font-semibold hover:text-white py-2 px-4 border border-blue hover:border-transparent rounded animate-jump animate-twice animate-duration-[2000ms] animate-delay-[980ms] animate-ease-linear">
           <svg width="28" height="28" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
