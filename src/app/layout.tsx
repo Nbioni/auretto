@@ -1,12 +1,14 @@
-import { Header } from '@/components/Header'
-import './globals.css'
 import type { Metadata } from 'next'
-import { Assistant } from 'next/font/google'
+import { Sora, Bitter } from 'next/font/google'
+import './globals.css'
+import Header from './components/header'
 
-const assistant = Assistant({
+const sora = Sora({
+  weight: ["100", "300", "400", "500", "700", "800"],
   subsets: ['latin'],
   display: 'swap',
 })
+
 
 export const metadata: Metadata = {
   title: 'Auretto',
@@ -19,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR" className={assistant.className} >
-      <body>
+    <html lang="pt-BR" className=' scroll-smooth overflow-x-hidden'>
+      <body className={sora.className + ' overflow-x-hidden selection:bg-auretto'}>
         <Header />
         {children}
       </body>
